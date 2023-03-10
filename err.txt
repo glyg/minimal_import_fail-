@@ -1,0 +1,32 @@
+2023-03-10 14:37:34,137 163        [      main] INFO          ome.formats.importer.ImportConfig - OMERO.blitz Version: 5.6.0
+2023-03-10 14:37:34,158 184        [      main] INFO          ome.formats.importer.ImportConfig - Bioformats version: 6.11.1 revision: 383bac974cd52e83908b54e4769ebb1e0d0673ee date: 1 December 2022
+2023-03-10 14:37:34,243 269        [      main] INFO   formats.importer.cli.CommandLineImporter - Log levels -- Bio-Formats: ERROR OMERO.importer: INFO
+2023-03-10 14:37:34,626 652        [      main] INFO      ome.formats.importer.ImportCandidates - Depth: 4 Metadata Level: MINIMUM
+2023-03-10 14:37:34,866 892        [      main] INFO      ome.formats.importer.ImportCandidates - 1 file(s) parsed into 1 group(s) with 1 call(s) to setId in 238ms. (240ms total) [0 unknowns]
+2023-03-10 14:37:34,898 924        [      main] INFO       ome.formats.OMEROMetadataStoreClient - Attempting initial SSL connection to localhost:4064
+2023-03-10 14:37:35,283 1309       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Insecure connection requested, falling back
+2023-03-10 14:37:35,593 1619       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Pinging session every 300s.
+2023-03-10 14:37:35,606 1632       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Server: 5.6.6
+2023-03-10 14:37:35,606 1632       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Client: 5.6.0
+2023-03-10 14:37:35,606 1632       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Java Version: 17.0.6
+2023-03-10 14:37:35,606 1632       [      main] INFO       ome.formats.OMEROMetadataStoreClient - OS Name: Linux
+2023-03-10 14:37:35,606 1632       [      main] INFO       ome.formats.OMEROMetadataStoreClient - OS Arch: amd64
+2023-03-10 14:37:35,607 1633       [      main] INFO       ome.formats.OMEROMetadataStoreClient - OS Version: 6.1.0-5-amd64
+2023-03-10 14:37:35,915 1941       [2-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILESET_UPLOAD_PREPARATION
+2023-03-10 14:37:36,318 2344       [2-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILESET_UPLOAD_START
+2023-03-10 14:37:36,333 2359       [3-thread-1] INFO   ts.importer.transfers.UploadFileTransfer - Transferring /home/guillaume/Dev/minimal_import_fail/img0.tif...
+2023-03-10 14:37:36,371 2397       [3-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILE_UPLOAD_STARTED: /home/guillaume/Dev/minimal_import_fail/img0.tif
+2023-03-10 14:37:36,414 2440       [3-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILE_UPLOAD_COMPLETE: /home/guillaume/Dev/minimal_import_fail/img0.tif
+2023-03-10 14:37:36,500 2526       [2-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILESET_UPLOAD_END
+2023-03-10 14:37:36,588 2614       [2-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - IMPORT_STARTED Logfile: 126
+2023-03-10 14:37:36,750 2776       [l.Client-0] INFO   ormats.importer.cli.LoggingImportMonitor - METADATA_IMPORTED Step: 1 of 5  Logfile: 126
+2023-03-10 14:37:37,006 3032       [l.Client-1] INFO   ormats.importer.cli.LoggingImportMonitor - PIXELDATA_PROCESSED Step: 2 of 5  Logfile: 126
+2023-03-10 14:37:37,270 3296       [l.Client-0] INFO   ormats.importer.cli.LoggingImportMonitor - THUMBNAILS_GENERATED Step: 3 of 5  Logfile: 126
+2023-03-10 14:37:37,297 3323       [l.Client-1] INFO   ormats.importer.cli.LoggingImportMonitor - METADATA_PROCESSED Step: 4 of 5  Logfile: 126
+2023-03-10 14:37:37,318 3344       [l.Client-0] INFO   ormats.importer.cli.LoggingImportMonitor - OBJECTS_RETURNED Step: 5 of 5  Logfile: 126
+2023-03-10 14:37:37,401 3427       [l.Client-1] INFO   ormats.importer.cli.LoggingImportMonitor - IMPORT_DONE Imported file: /home/guillaume/Dev/minimal_import_fail/img0.tif
+Other imported objects:
+Fileset:52
+
+==> Summary
+1 file uploaded, 1 fileset created, 1 image imported, 0 errors in 0:00:01.494
