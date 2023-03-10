@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  db_omero:
+    image: "postgres:11"
+    environment:
+      POSTGRES_USER: omero
+      POSTGRES_DB: omero
+      POSTGRES_PASSWORD: omero
+    networks:
+      - omero
+
+  omeroserver:
+    image: openmicroscopy/omero-server:latest
+    container_name: omeroserver
+    environment:
+      CONFIG_omero_db_host: db_omero
+      # This is the postgres service name in docker-compose
+      CONFIG_omero_db_user: omero
+      CONFIG_omero_db_pass: omero
+      CONFIG_omero_db_name: omero
+      # This is the omeroserver root password
+      ROOTPASS: omero
+      OMERO_ROOT_PASSWORD: omero
+    networks:
+      - omero
+    ports:
+      - "4064:4064"
+      - "4065:4065"
+      - "4066:4066"
+
+networks:
+  omero:
